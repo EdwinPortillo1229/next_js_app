@@ -5,6 +5,7 @@ export default function Home() {
   const [movieDecade, setMovieDecade] = useState('1960s');
   const usedMovies = [];
   const handleButtonClick = async () => {
+    const openAiKey = "NULL"
     const openAiEndpoint = "https://api.openai.com/v1/chat/completions";
     const prompt = `
       You are in the mood for a ${movieGenre} movie the decade of the ${movieDecade} please consider every year in the decade. 
